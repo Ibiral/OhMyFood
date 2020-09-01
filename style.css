@@ -1,0 +1,323 @@
+@keyframes dot {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-6px);
+    }
+  }
+
+@keyframes shake{
+    0% {
+        transform: rotate(2deg)
+    }
+    100%{
+        transform: rotate(-2deg);
+    }
+}
+  
+@font-face {
+    font-family: 'devonshireregular';
+    src: url('fonts/devonshire/devonshire-regular-webfont.woff2') format('woff2'),
+         url('fonts/devonshire/devonshire-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caveatbold';
+    src: url('fonts/caveat/caveat-bold-webfont.woff2') format('woff2'),
+         url('fonts/caveat/caveat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'croissant_oneregular';
+    src: url('fonts/croissant_one/croissantone-regular-webfont.woff2') format('woff2'),
+         url('fonts/croissant_one/croissantone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('fonts/dancing_script/DancingScript-Regular.woff2') format('woff2'),
+        url('fonts/dancing_script/DancingScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('fonts/kaushan_script/KaushanScript-Regular.woff2') format('woff2'),
+        url('fonts/kaushan_script/KaushanScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body 
+{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+header
+{
+    max-width: 100%;
+    height: 100px;
+    background-color: rgb(34, 134, 104);
+    margin-top: -30px;
+}
+
+h1
+{
+    text-align: center;
+    color: #fec907;
+    font-size: 3em;
+    padding-top: 20px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.menus div
+{
+    height: 500px;
+    margin: 20px;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px #bbba;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow:hidden;
+}
+
+.menus a
+{
+    text-decoration: none;
+    transition: transform .5s;
+}
+
+.menus div:hover a
+{
+    transform: scale(1.15);
+    opacity: 0.7;
+}
+
+h2, h3
+{
+    text-align: center;
+}
+
+.fas
+{
+    font-size: 4rem;
+    background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu1
+{
+    background-color: #fcdfdb;
+    color: #3d1319;
+}
+
+.menu1 h2
+{
+    font-family: 'devonshireregular', Cursive, Serif;
+    font-size: 2.8em;
+    font-weight: normal;
+    color: #3d1319;
+}
+
+.menu1 h3
+{
+    text-transform: uppercase;
+    font-family: 'caveatbold', Cursive, sans-serif;
+    font-size: 3em;
+    color: #3d1319;
+}
+
+.menu2 
+{
+    background-color: #fff5fe;
+}
+
+.menu2 h2
+{
+    font-family: 'croissant_oneregular';
+    font-size: 2em;
+    background: linear-gradient(150deg, #e38913, #af6ca6, #8f5aff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu2 h3
+{
+    font-family: serif;
+    font-weight: bold;
+    color: #c77412;
+    font-size: 3em;
+}
+
+.menu3
+{
+    background-color: #f9f9f9;
+}
+
+.menu3 h2
+{
+    font-family:'Dancing Script', Cursive, serif;;
+    font-size: 3em;
+    font-weight: normal;
+    font-style: italic;
+    background: linear-gradient(90deg, #023be3, #229df9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu3 h3
+{
+    font-family: 'caveatbold', Cursive, sans-serif;
+    font-weight: bold;
+    color: #229df9;
+    font-size: 3.5em;
+}
+
+.menu4 
+{
+    background-color: #fdfffd;
+}
+
+.menu4 h2
+{
+    font-family:'Kaushan Script', Cursive, serif;
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #4e9e4c, #bcfd7e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.menu4 h3
+{
+    font-family: 'caveatbold', Cursive, sans-serif;
+    font-weight: bold;
+    color: #4e9e4c;
+    font-size: 3.5em;
+}
+
+aside
+{
+    background-color: rgb(34, 134, 104);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 100px auto;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+}
+
+aside p
+{
+    color: #fec907;
+    font-size: 1.5em; 
+    text-align: center;
+}
+
+.point1
+{
+    display: inline-block;
+    animation: dot 500ms infinite alternate;
+}
+
+.point2
+{
+    display: inline-block;
+    animation: dot 500ms 250ms  infinite alternate;
+}
+
+.point3
+{
+    display: inline-block;
+    animation: dot 500ms 500ms infinite alternate;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: rgb(34, 134, 104);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+footer p
+{
+    color: #fec907;
+    font-size: 1.3em;
+    padding: 0 20px 0 20px;
+}
+
+footer p:hover
+{
+    animation: shake .060s ease-in-out .060s infinite alternate;
+}
+
+footer a
+{
+    text-decoration: none;
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media screen and (min-width: 768px)
+{
+    .menus
+    {
+    display: grid;
+    grid-template-areas: "menu1 menu2"
+                         "menu3 menu4";
+    max-width: 80%;
+    margin: auto;
+    }
+
+    .menu1
+    {
+        grid-area: menu1;
+    }
+
+    .menu2
+    {
+        grid-area: menu2;
+    }
+
+    .menu3
+    {
+        grid-area: menu3;
+    }
+
+    .menu4
+    {
+        grid-area: menu4;
+    }
+
+    footer p
+    {
+        font-size: 1.5em;
+    }
+}
