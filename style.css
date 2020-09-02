@@ -156,7 +156,6 @@ h2, h3
     font-family: 'croissant_oneregular';
     font-size: 2em;
     background: linear-gradient(150deg, #e38913, #af6ca6, #8f5aff);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -181,7 +180,6 @@ h2, h3
     font-weight: normal;
     font-style: italic;
     background: linear-gradient(90deg, #023be3, #229df9);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -204,7 +202,6 @@ h2, h3
     font-family:'Kaushan Script', Cursive, serif;
     font-size: 2.5em;
     background: linear-gradient(90deg, #4e9e4c, #bcfd7e);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
 }
@@ -226,7 +223,7 @@ aside
     margin: 10px auto 100px auto;
     border-radius: 5px;
     height: 50px;
-    width: 200px;
+    width: 250px;
 }
 
 aside p

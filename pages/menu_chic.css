@@ -64,7 +64,6 @@ h2
     font-family: 'croissant_oneregular';
     font-size: 3em;
     background: linear-gradient(150deg, #e38913, #af6ca6, #8f5aff);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 100px 0 70px 0;
