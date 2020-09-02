@@ -216,19 +216,6 @@ footer p:hover
     animation: shake .060s ease-in-out .060s infinite alternate;
 }
 
-.trait::before
-{
-    content: "";
-    position: absolute;
-    top: 420px;
-    right: 120px;
-    border:  #c67412 30px solid;
-    width: 250px;
-    height: 0px;
-    bottom: auto;
-    clip-path:polygon(33% 43%, 55% 52%, 100% 54%, 100% 55%, 55% 59%, 33% 66%, 21% 59%, 6% 55%, 6% 55%, 21% 50%);
-  
-}
 
 /*RESPONSIVE DESIGN*/
 
@@ -283,15 +270,3 @@ footer p:hover
     }
 }
 
-@media screen and (max-width: 768px)
-{
-    hr 
-    {
-        display: none;
-    }
-
-    ul 
-    {
-        font-size: 2em;
-    }
-}
