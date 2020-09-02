@@ -1,0 +1,256 @@
+@keyframes shake{
+    0% {
+        transform: rotate(2deg)
+    }
+    100%{
+        transform: rotate(-2deg);
+    }
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('fonts/kaushan_script/KaushanScript-Regular.woff2') format('woff2'),
+        url('fonts/kaushan_script/KaushanScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'caveatbold';
+    src: url('fonts/caveat/caveat-bold-webfont.woff2') format('woff2'),
+         url('fonts/caveat/caveat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body 
+{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+header
+{
+    max-width: 100%;
+    height:100px;
+    background-color: rgb(34, 134, 104);
+    margin-top: -30px;
+}
+
+h1
+{
+    text-align: center;
+    color: #fec907;
+    font-size: 3em;
+    padding-top: 25px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #fdcb46;
+}
+
+main
+{
+    width: 900px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: Serif, Arial, Helvetica;
+    background-color: white;
+    box-shadow: 0px 0px 10px -3px black;
+    margin-bottom: 100px;
+    padding-bottom: 150px;
+    font-style: italic;
+}
+
+h2
+{
+    text-align: center;
+    background: linear-gradient(90deg, #4e9e4c, #bcfd7e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 100px 0 70px 0;
+}
+
+h3
+{
+    display: inline-block;
+    font-family: "caveatbold", cursive;
+    text-align: center;
+    font-size: 2em;
+}
+
+hr
+{
+    position: relative;
+    top: 75px;
+    height: 25px;
+    border: none;
+    background: url(images/menu4_hr.svg) no-repeat top center;
+    background-size: 900px 30px;
+}
+
+h3.left
+{
+    position: relative;
+}
+
+h3.left::before
+{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: auto;
+  background-color: black;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+h3.left:hover::before
+{
+    visibility: visible;
+    width: 100%;
+}
+
+ul
+{
+    list-style-type: none;
+    font-family: "caveatbold", cursive;
+    font-size: 1.3em;
+    text-align: justify;
+    margin:0;
+    padding:0;
+}
+
+li
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+span 
+{
+    width: 35rem;
+}
+
+aside 
+{
+    width: 5rem;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: rgb(34, 134, 104);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+footer p
+{
+    color: #fec907;
+    font-size: 1.5em;
+    padding: 0 20px 0 20px;
+}
+
+footer p:hover
+{
+    animation: shake .060s ease-in-out .060s infinite alternate;
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media screen and (max-width: 1024px)
+{
+    h2
+    {
+        padding: 0;
+    }
+
+     main
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 30px auto 100px;
+        padding: 0px;
+        font-family: "Comic Sans MS";
+        font-style: normal;
+    }
+
+    h3 
+    {
+        font-size: 3em;
+    }
+
+    hr 
+    {
+        display:none;
+    }
+
+    ul 
+    {
+        font-size: 2.5em;
+    }
+
+    li
+    {
+        display: block;
+        padding:10px;
+    }
+
+    aside {
+        text-align: center;
+        width: auto;
+    }
+
+    .sommet
+    {
+        margin-bottom: 30px;
+    }
+
+    footer p
+    {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    h2 
+    {
+        font-size: 3em;
+    }
+
+    h3 
+    {
+        font-size: 2.5em;
+    }
+
+    ul 
+    {
+        font-size: 2em;
+    }
+
+    .note-foot 
+    {
+        font-size: 2em;
+    }
+
+}
